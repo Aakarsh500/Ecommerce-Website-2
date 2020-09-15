@@ -1,4 +1,5 @@
 import React from "react";
+import { ShopPage } from "./Components/Pages/shop-page/shop-page.components";
 import { Route } from "react-router-dom";
 import "./styles.css";
 import { HomePage } from "./Components/Pages/homepage/homepage.component";
@@ -10,7 +11,7 @@ export default function App() {
     <div>
       <Route exact={true} path="/" component={HomePage} />
       {/* <HomePage /> */}
-      <Route exact path="/shop/hats" component={Hats} />
+      <Route exact path="/shop" component={ShopPage} />
     </div>
   );
 }
